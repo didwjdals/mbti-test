@@ -1,6 +1,6 @@
 import styles from "../App.module.css"
 import { resultData } from "../constants/resultData";
-import { useParams } from "react-router-dom";
+import { useParams, Link } from "react-router-dom";
 
 const ResultPage = () => {
     const { mbti } = useParams();
@@ -20,6 +20,8 @@ const ResultPage = () => {
                 {desc}
             </p>
         ))}
+        <button className={styles.square_button}>카카오톡 공유하기</button>
+        <Link to='/' className={styles.square_button}>다시 해보기</Link>
     </div>
     );
 };
