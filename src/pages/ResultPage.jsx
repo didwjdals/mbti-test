@@ -19,7 +19,7 @@ const ResultPage = () => {
 
     const clickShareHandler = () => {
         Kakao.Share.sendCustom({
-            templateId: 978147,
+            templateId: 99257,
             templateArgs: {
                 THU: "https://mbti-test-five.vercel.app" + resultMBTIData.image,
                 MATCH_CAT: resultMBTIData.match_cat,
